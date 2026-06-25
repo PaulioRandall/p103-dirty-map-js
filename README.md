@@ -1,3 +1,7 @@
+![Made to be Plundered](https://img.shields.io/badge/Made%20to%20be%20Plundered-royalblue)
+[![Latest version](https://img.shields.io/github/v/release/PaulioRandall/p103-dirty-map-js)](https://github.com/PaulioRandall/p103-dirty-map-js/releases)
+[![Release date](https://img.shields.io/github/release-date/PaulioRandall/p103-dirty-map-js)](https://github.com/PaulioRandall/p103-dirty-map-js/releases)
+
 # P103: Dirty Map
 
 DirtyMap keeps a set of all keys for entries that are dirty, i.e. those that have been added, changed, deleted, or flagged by the user.
