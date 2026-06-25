@@ -16,9 +16,9 @@
 		"type": "git",
 		"url": "https://github.com/PaulioRandall/p103-dirty-map-js.git"
 	},
-	"main": "src/index.js",
+	"main": "src/DirtyMap.js",
 	"exports": {
-		".": "./src/index.js"
+		".": "./src/DirtyMap.js"
 	},
 	"scripts": {
 		"fmt": "prettier --log-level warn --write .",
