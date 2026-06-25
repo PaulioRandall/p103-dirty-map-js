@@ -1,8 +1,11 @@
-# TODO: Title
+# P103: Dirty Map
 
-# P100: Personalised Template Library for JavaScript
+DirtyMap keeps a set of all keys for entries that are dirty, i.e. those that have been added, changed, deleted, or flagged by the user.
 
-TODO: description.
+- It does not record what changes were made.
+- Dirty tracking can be reset.
+
+Implementation wise, it decorates the builtin JavaScript [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
 ## Usage
 
