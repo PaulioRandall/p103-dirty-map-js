@@ -8,9 +8,9 @@ DirtyMap keeps a set of all keys for entries that are dirty, i.e. those that hav
 
 Implementation wise, it decorates the builtin JavaScript [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
-**API Documentation is in _[/src](./src)_.**
+**API Documentation in _[/src](./src)_.**
 
-## Usage 1: Import from NPM
+## Import from NPM
 
 **package.json**
 
@@ -30,6 +30,6 @@ import DirtyMap from '@paulio/dirty-map-js'
 // ...
 ```
 
-## Usage 2: Copy & Paste
+## Made to be Plundered
 
 _Copy & paste_ files from _[/src](./src)_ into your project. Tests are written in [Jest](https://jestjs.io/) but should be easy to adapt or rewrite for whatever testing framework.
