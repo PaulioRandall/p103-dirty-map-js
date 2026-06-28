@@ -3,7 +3,7 @@
 	"author": "Paul Williams",
 	"version": "0.1.0",
 	"name": "@paulio/dirty-map-js",
-	"description": "Decorates JavaScript map to track changed entries.",
+	"description": "P103: Decorates JavaScript map to track changed entries.",
 	"keywords": [
 		"javascript",
 		"map"
@@ -14,7 +14,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/PaulioRandall/p103-dirty-map-js.git"
+		"url": "git+https://github.com/PaulioRandall/p103-dirty-map-js.git"
 	},
 	"main": "src/DirtyMap.js",
 	"exports": {
