@@ -1,7 +1,7 @@
 {
 	"license": "MIT",
 	"author": "Paul Williams",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"name": "@paulio/dirty-map-js",
 	"description": "P103: Decorates JavaScript map to track changed entries.",
 	"keywords": [
@@ -16,17 +16,21 @@
 		"type": "git",
 		"url": "git+https://github.com/PaulioRandall/p103-dirty-map-js.git"
 	},
-	"main": "src/DirtyMap.js",
 	"exports": {
-		".": "./src/DirtyMap.js"
+		".": "./lib/DirtyMap.js"
 	},
 	"scripts": {
+		"update": "npx npm-check-updates -u && npm i",
 		"fmt": "prettier --log-level warn --write .",
-		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests --testPathPatterns ./src/",
-		"audit": "npm run fmt && npm run test && cat ./ready-to-integrate.txt"
+		"types": "flow full-check",
+		"compile": "flow-remove-types src/ -d lib/",
+		"test": "npm run compile && node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests --testPathPatterns ./lib/",
+		"audit": "npm run fmt && npm run types && npm run test && cat ./ready-to-integrate.txt"
 	},
 	"devDependencies": {
+		"flow-bin": "0.322.0",
+		"flow-remove-types": "2.322.0",
 		"jest": "30.4.2",
-		"prettier": "3.9.0"
+		"prettier": "3.9.5"
 	}
 }
